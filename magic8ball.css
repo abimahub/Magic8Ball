@@ -1,0 +1,57 @@
+body {
+background-color: cornflowerblue;
+    font-family: 'Raleway', sans-serif;
+    text-align:center;
+}
+h1 {
+    font-family: 'Elsie Swash Caps', cursive;
+    color: #004aad;
+    text-shadow: 3px 3px 3px aliceblue, 3px 3px 5px #0000ff;
+}
+main {
+    max-width: 610px;
+    margin: auto;
+    }
+button {
+    padding: 10px;
+    border-radius: 25px;
+    border:#004aad solid 2px;
+    background-color: #0000ff;
+    color:aliceblue;
+    box-shadow: -3px 3px 5px #0000ff, -3px 3px 3px aliceblue;
+    
+}
+button:hover {
+  min-width: 50px;
+    transform: rotate(180deg);
+    background: aliceblue;
+    color:#0000ff;
+    font-weight: bold;
+  }
+#magicEightBall{
+    animation-name: colourshake;
+    animation-duration: 1s; 
+}
+#circle {
+    font-size: 14pt;
+    background-image: radial-gradient(aliceblue 45%, darkgray 65%, black 2%);
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 75px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: none; 
+  }
+  @keyframes colourshake {
+    0%   {background-color:aliceblue; left:0px; top:0px;}
+    25%  {background-color:yellow; left:20px; top:0px;}
+    50%  {background-color:#0000ff; left:20px; top:20px;}
+    75%  {background-color:aliceblue; left:0px; top:20px;}
+    100% {background-color:#0000ff; left:0px; top:0px;}
+  }
+  img {
+    min-width: 350px; 
+  }
